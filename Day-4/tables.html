@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse:collapse ;
+    }
+     th{
+        border: 1px solid black;
+    }
+     td{
+        text-align: center;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    table thead{
+        background-color: aquamarine;
+    }
+   table tbody tr:nth-child(even){
+    background-color: blueviolet;
+   }
+   table tbody tr:nth-child(odd){
+    background-color: rgb(122, 120, 124);
+   }
+</style>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>rajesh</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>nani</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>chintu</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">this is a footer</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
